@@ -11,6 +11,7 @@ function coroutine(generatorFunction) {
   };
 }
 
+
 const getPath = (item) => {
   const collection = item.nodeType === 'folder' ? Store.folderMap : Store.fileMap
   const folderMap = Store.folderMap;

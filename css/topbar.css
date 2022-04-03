@@ -1,0 +1,81 @@
+#fs-topbar {
+  padding: 0px 9px 0px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 35px;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid #1F201A4D;
+  color: #DCDCDC;
+  transition: 0.2s;
+  filter: contrast(120%);
+  display: grid;
+  grid-template-rows: 40px 30px;
+  grid-template-columns: repeat(auto-fit, 0.5fr);
+  gap: 3px;
+  grid-template-areas:
+    "name ctrl"
+    "crum crum";
+  border-bottom: 1px solid #181A1CEB;
+}
+
+#fs-topbar-breadcrumbs {
+  grid-area: crum;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  align-items: flex-end;
+  gap: 0px;
+  overflow: scroll;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0px 5px 2px 0px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  /* backdrop-filter: brightness(40%); */
+  color: #FFFFFF78;
+}
+
+#fs-topbar-options {
+  position: sticky;
+  grid-area: ctrl;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr repeat(3, auto);
+
+
+  padding: 6px 12px 0px 6px;
+  border-left: 1px solid #A7A8AB;
+  font-family: 'Bebas Neue', sans-serif;
+  width: 100%;
+}
+
+#fs-topbar-options * {
+  white-space: nowrap;
+}
+
+#back-button-icon * {
+  /* fill: #D0D0D030; */ 
+  /* stroke: #8D8D8D; */ 
+  /* filter: brightness(10%); */ 
+}
+
+#back-button.inactive * {
+  fill: #D0D0D030; 
+  /* stroke: #8D8D8D; */ 
+  /* filter: brightness(10%); */ 
+}
+
+#fs-topbar-currentname {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: name;
+  padding: 4px 8px 0;
+  letter-spacing: 3px;
+  font-size: 17px;
+}

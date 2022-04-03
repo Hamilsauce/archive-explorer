@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <title>File System w Tree Generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.3.0/rxjs.umd.min.js" integrity="sha512-y3JTS47nnpKORJX8Jn1Rlm+QgRIIZHtu3hWxal0e81avPrqUH48yk+aCi+gprT0RMAcpYa0WCkapxe+bpBHD6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/topbar.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <main class="gradient" id="app">
+    
+    <section class="flipped-gradient" class="" id="app-body">
+      <header class="transparency" id="fs-topbar">
+        <div id="fs-topbar-currentname">Documents</div>
+        <div id="fs-topbar-options">
+          <div class="fs-topbar-button">
+            <svg id="folder-create-icon" height="34px" width="34px" viewBox="0 0 24 24" fill="#FFFFFF90" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path stroke="#00000090" d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-1 8h-3v3h-2v-3h-3v-2h3V9h2v3h3v2z" />
+            </svg>
+          </div>
+        </div>
+        <div id="fs-topbar-breadcrumbs">/ Music / procession / Original Recs / procession.wav</div>
+      </header>
+      
+      <!-- <header class="transparency" id="fs-topbar">
+        <div id="fs-topbar-breadcrumbs">/</div>
+        <div id="fs-topbar-options">
+          <div class="fs-topbar-button">Go</div>
+          <div class="fs-topbar-button">Rename</div>
+          <div class="fs-topbar-button">
+            <svg id="folder-create-icon" height="34px" width="34px" viewBox="0 0 24 24" fill="#FFFFFF90" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path stroke="#00000090" d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-1 8h-3v3h-2v-3h-3v-2h3V9h2v3h3v2z" />
+            </svg>
+          </div>
+        </div>
+      </header> -->
+      <ul id="file-system">
+    <!--     <li class="transparency box">
+      <div class="node-content">
+        Music Projects
+      </div>
+      <ul class="child-list">
+        <li class="box">Ratboot</li>
+        <li class="box">Procession</li>
+        <li class="box">New Tunes</li>
+        <li class="box">New Tunes</li>
+        <li class="box">New Tunes</li>
+    
+      </ul>
+    </li>
+    <li class="transparency box">Music</li>
+    <li class="transparency box">Documents</li>
+    <li class="transparency box">Onedrive</li>
+    <li class="transparency box">Pictures</li>
+    <li class="transparency box">Desktop</li>
+    <li class="transparency box">Downloads</li>
+    <li class="transparency box">Users</li>
+    <li class="transparency box">sources</li>
+    <li class="transparency box">Recycle Bin</li>
+    <li class="transparency box">New Folder</li>
+    <li class="transparency box">New Folder (1)</li>
+    <li class="transparency box">New Folder (2)</li> -->
+        <!--  
+      <div class="transparency box"></div>
+      <div class="transparency box"></div>
+      <div class="transparency box"></div>
+      <div class="transparency box"></div>
+      <div class="transparency box"></div>
+      <div class="transparency box"></div>
+      <div class="transparency box"></div>
+      <div class="transparency box"></div>
+-->
+      </ul>
+    </section>
+    <footer class="transparency_" id="app-toolbar">
+      <div class="menu-container"></div>
+    </footer>
+
+  </main>
+
+  <script src="./main.js" type="module"></script>
+  <!-- <script src="./_css-differ.js" type="module"></script> -->
+  <!-- <script src="/_generator-chain.js" type="module"></script> -->
+  <!-- <script src="/_more-lazy-push-generator.js" type="module"></script> -->
+  <!-- <script src="/_generator_lazy_push.js" type="module"></script> -->
+  <!-- <script src="/generator-pipe.js" type="module"></script> -->
+  <!-- <script src="/_collapsible-node/tree-file-system.js" type="module"></script> -->
+  <!-- <script src="./COLLAPSIBLE-TREE-STABLE/tree-generator.js" type="module" charset="utf-8"></script> -->
+
+  <!-- FRESH NODE TEMPLATE -->
+  <template id="fs-node-template">
+    <li id="" class="fs-node node" data-is-root="false" data-selected="false" data-attached="false" data-node-type="" data-active="false">
+      <button id="" class="collapsible-button">Open Child Section 1</button>
+      <section class="collapsible-content-wrapper">
+        <ul class="collapsible-content"></ul>
+      </section>
+    </li>
+  </template>
+</body>
+
+</html>

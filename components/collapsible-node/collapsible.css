@@ -1,0 +1,81 @@
+
+.node {
+  width: 100%;
+}
+
+.node,
+.node * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  list-style: none;
+
+}
+
+.collapsible-button {
+  background-color: #777;
+  background-color: #C5A814;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.node[data-active=true]>.collapsible-button {
+  background-color: #8B7D36;
+}
+
+.node[data-active=true]>.collapsible-button:hover {
+  background-color: #555555;
+}
+
+.node[data-active=true]>.collapsible-button:after {
+  content: "\2212";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.node[data-active=false]>.collapsible-button {
+  background-color: #C5A814;
+}
+
+.node[data-active=false]>.collapsible-button:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  width: 100%;
+}
+
+.collapsible-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0px 10px 10px;
+  /* background-color: #f1f1f1; */
+  overflow: hidden;
+}
+
+.node[data-active=false]>.collapsible-content-wrapper {
+  padding: 10px 0 0 10px;
+}
+
+.node[data-has-content=false]>.collapsible-content-wrapper {
+  padding: 10px 0 0 10px;
+}

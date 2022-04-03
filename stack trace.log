@@ -1,0 +1,10 @@
+read properties of undefined (reading 'folders')
+
+at MediaDirectory.loadDirectory 
+mediaDirectory.js:89:39)
+
+at MediaDirectory.init 
+mediaDirectory.js:77:10)
+
+at new App main.js:25:13)
+main.js:42:13

@@ -2,8 +2,8 @@ const { iif, BehaviorSubject, ReplaySubject, AsyncSubject, Subject, interval, of
 const { throttleTime, toArray, mergeMap, switchMap, scan, take, takeWhile, map, tap, startWith, filter, mapTo } = rxjs.operators;
 const { fromFetch } = rxjs.fetch;
 
-import fileSource from './_sources/files.source.js'
-import folderSource from './_sources/folders.source.js'
+import fileSource from './sources/files.source.js'
+import folderSource from './sources/folders.source.js'
 // import { FSNodeMap, FSNamedMap } from '/fs-models/index.js';
 // import { batchToFirestore } from '/db/firestore-batch.js';
 // import db from '/firebase.js'
